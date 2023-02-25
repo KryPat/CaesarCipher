@@ -6,9 +6,22 @@ public class CaesarCipher {
         System.out.println("Enter a message to encode or decode:");
         String message = scan.nextLine();
         String output = "";
-        for (int x = message.length()-1; x >= 0; x--) {
-            output += message.charAt(x);
+        char key = 13;
+        for (int x = 0; x < message.length(); x++) {
+            char input = message.charAt(x);
+            if (input >= 'A' && input <= 'Z') {
+                input += key;
+                if (input > 'Z')
+                    input -= 26;
+            }
+            if (input >= 'a' && input <= 'z') {
+                input += key;
+                if (input > 'z')
+                    input -= 26;
+            }
+                output += input;
         }
         System.out.println(output);
+        scan.close();
     }
 }
