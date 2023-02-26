@@ -14,9 +14,6 @@ public class CaesarCipher {
         //try {
         for (int x = 0; x < message.length(); x++) {
             char input = message.charAt(x);
-            //if (key >= 0) {
-                //key -= (keyVal * 2);
-            //}
             if (input >= 'A' && input <= 'Z') {
                 input += key;
                 if (input > 'Z')
