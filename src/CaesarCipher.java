@@ -6,20 +6,29 @@ public class CaesarCipher {
         System.out.println("Enter a message to encode or decode:");
         String message = scan.nextLine();
         String output = "";
-        char key = 13;
+        System.out.println("Enter a secret key (-25 to 25):");
+        int keyVal = Integer.parseInt(scan.nextLine());
+        char key = (char) keyVal;
+
+        // Pętla for wyznaczająca przesunieta litere od a do z oraz od A do Z, w unicode.
+        //try {
         for (int x = 0; x < message.length(); x++) {
             char input = message.charAt(x);
             if (input >= 'A' && input <= 'Z') {
                 input += key;
                 if (input > 'Z')
                     input -= 26;
+                if (input < 'A')
+                    input += 26;
             }
             if (input >= 'a' && input <= 'z') {
                 input += key;
                 if (input > 'z')
                     input -= 26;
+                if (input < 'a')
+                    input += 26;
             }
-                output += input;
+            output += input;
         }
         System.out.println(output);
         scan.close();
