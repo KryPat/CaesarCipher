@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00f1b9ff-a03d-4daf-b08e-debf219584e7" name="Changes" comment="v0.0.4&#10;added numbers to also be encrypted">
+    <list default="true" id="00f1b9ff-a03d-4daf-b08e-debf219584e7" name="Changes" comment="v0.0.4&#10;bug fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CaesarCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaesarCipher.java" afterDir="false" />
     </list>
@@ -104,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677419337712</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="v0.0.4&#10;bug fixes">
+      <created>1677420615333</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677420615333</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +130,7 @@
     <MESSAGE value="v0.0.2" />
     <MESSAGE value="v0.0.3&#10;added key value to define your own key for encrypt/decrypt;" />
     <MESSAGE value="v0.0.4&#10;added numbers to also be encrypted" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.0.4&#10;added numbers to also be encrypted" />
+    <MESSAGE value="v0.0.4&#10;bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.0.4&#10;bug fixes" />
   </component>
 </project>
